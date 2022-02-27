@@ -1,0 +1,50 @@
+/*
+Цвета:
+bgc: #f1f3f9 (серо-синий)
+Акцент/hover кнопки: #ff6c00 (оранжевый) 
+Шрифт: #7d7f9e (серо-фиолетовый)
+доп инфа: #bfccde (светло-серый)
+Кнопки / тайтл: #4065e4 (синий)
+*/
+
+@font-face {
+    font-family: 'DIN Condensed';
+    src: url('/fonts/DINCondensed-Light.eot');
+    src: local('DIN Condensed Light'), local('DINCondensed-Light'),
+        url('/fonts/DINCondensed-Light.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/DINCondensed-Light.woff2') format('woff2'),
+        url('/fonts/DINCondensed-Light.woff') format('woff'),
+        url('/fonts/DINCondensed-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DIN Condensed';
+    src: url('/fonts/DINCondensed-Regular.eot');
+    src: local('DIN Condensed'), local('DINCondensed-Regular'),
+        url('/fonts/DINCondensed-Regular.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/DINCondensed-Regular.woff2') format('woff2'),
+        url('/fonts/DINCondensed-Regular.woff') format('woff'),
+        url('/fonts/DINCondensed-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+html {
+    font-family: 'DIN Condensed';
+    font-size: 16px;
+    color: #5a5b72;
+}
+
+*,
+*::before, 
+*::after {
+    box-sizing: border-box;
+    border: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}

@@ -2,14 +2,17 @@ const button = document.getElementById('button')
 const image = document.getElementById('img')
 const url = 'https://aws.random.cat/meow'
 
-const fetchHandler = async () => {
+const fetchHandler = async(url) => {
     try {
         const response = await fetch(url)
-        const data = await response.json()
-        image.src = data.file
+        const json = await response.json()
+        image.src = json.file
     } catch (error) {
         console.log(error)
+        alert('К сожалению, котиков не будет :(')
     }
 }
 
-button.addEventListener('click', () => fetchHandler())
+button.addEventListener('click', () => fetchHandler(url))
+
+

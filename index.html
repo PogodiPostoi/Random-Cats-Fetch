@@ -7,7 +7,36 @@
     <title>Генератор случайных котиков</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body >
+    <header class="header">
+        <div class="header__logo">
+            <div class="header__logo-container">
+                <a class="header__logo-link" href="#">
+                    <div class="header__logo-img">
+                        <img src="img/logo.svg" alt="logo eye">
+                    </div>
+                    <div class="header__logo-text">
+                        PogodiPostoi
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="header__menu menu">
+            <!--<button class="header__menu-button">
+                <img src="img/ic-menu.svg" alt="menu button" class="header__menu-button-img">
+            </button>-->
+            <div class="menu__icon">
+                <img src="img/ic-menu.svg" alt="menu button" class="header__menu-button-img">
+            </div>
+            <nav class="menu__body">
+                <ul class="menu__list">
+                    <li><a href="#" class="menu__link">Раздел 1</a></li>
+                    <li><a href="#" class="menu__link">Раздел 2</a></li>
+                    <li><a href="#" class="menu__link">Раздел 3</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
     <div class="main">
         <div class="main__title-container">
             <h2 class="main__title-container-text">Твой котик дня</h2>
@@ -16,7 +45,7 @@
         <div class="main__cat-generator">
             <img class="main__cat-generator-img" id="img" src="img/cat-title.jpg" alt="Подождите, пока котик проснётся...">
         </div>
-        <button class="main__button" id="button">Позвать</button>
+        <button class="main__button" id="button">Узнать</button>
     </div>
     <script src="js/script.js"></script>
 </body>

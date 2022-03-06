@@ -101,6 +101,17 @@ body {
 .header__logo-text {
     color: #fff;
     font-size: 1.2rem;
+    
+}
+
+.header__logo-text:hover{
+    color: #ff6c00;
+    transition-duration: .25s;
+}
+
+.header__logo-text:active {
+    color: #e25e00;
+    transition-duration: .25s;
 }
 
 .menu__icon {
@@ -200,36 +211,75 @@ body {
     background-color: #e25e00;
 }
 
-
-
-
-
-
-
-
-
-
 /* menu*/
 
-.menu__list {
+.menu {
+    padding: 0 15px;
+}
+
+#menu__toggle {
+    opacity: 0;
+}
+
+#menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    top: 80px;
+    z-index: 1;
+    opacity: 100;
+}
+
+#menu__toggle:checked ~ .menu__box:before {
+    visibility: visible;
+}
+  
+.menu__btn {
+    width: 26px;
+    height: 26px;
+
+    cursor: pointer;
+    z-index: 100;
+}
+
+.menu__box {
+    width: calc(100% - 10px);
+    padding: 20px 0;
+
+    display: block;
     position: absolute;
-    top: 100%;
-    right: 0;
-    background: #000;
-    padding: 15px;
-    min-width: 200px;
+    visibility: hidden;
+    top: 80px;
+    right: 5px;
+    z-index: 1;
 
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+    border-radius: 1.8rem;
+
+    background-color: #313131;
+    opacity: 0;
+
+    list-style: none;
+
+    transition-duration: .25s;
 }
 
-.menu__list > li {
-    padding: 5px 0;
-}
+.menu__item {
+    display: block;
+    padding: 12px 24px;
 
-.menu__link {
     color: #fff;
-    font-size: 1rem;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+
     text-decoration: none;
+
+    transition-duration: .25s;
 }
+
+.menu__item:hover {
+    color: #ff6c00;
+}
+
+.menu__item:active {
+    color: #e25e00;
+}
+

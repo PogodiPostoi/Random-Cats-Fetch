@@ -54,7 +54,7 @@ html {
 body {
     padding: 10px 5px 0;
     background-color: #f1f3f9;
-    /*height: 200vh;*/
+    height: 200vh;
 }
 
 /*header*/
@@ -89,22 +89,9 @@ body {
     padding: 0 15px;
 }
 
-.header__logo-img {
-    width: 40px;
-    height: 40px;
-    padding: 2px;
-
-    border: solid 1px #fff;
-    border-radius: .8rem;
-
-    display: flex;
-    align-items: center;
-}
-
 .header__logo-text {
     color: #fff;
-    font-size: 1.2rem;
-    
+    font-size: 1.4rem;
 }
 
 .header__logo-text:hover{
@@ -286,13 +273,27 @@ body {
     color: #e25e00;
 }
 
+/*noScroll*/
 
-
-
-
-
-/*overflow*/
-
-.noOverflow {
+.noScroll {
     overflow: hidden;
+}
+
+@media (max-width: 480px) {
+    .main__title-container-text {
+        font-size: 24px;
+    }
+
+    .main__title-container-img {
+        width: 100%;
+        max-width: 40px;
+    }
+
+    .menu__item {
+        font-size: 16px;
+    }
+
+    .header__logo-text {
+        font-size: 1.2rem;
+    }
 }

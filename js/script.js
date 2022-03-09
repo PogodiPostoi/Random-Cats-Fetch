@@ -5,7 +5,6 @@ const menu = document.getElementById('menu__toggle')
 
 // Функция по получению картинок из url
 const fetchHandler = async(url) => {
-    console.log(image.src)
     try {
         const response = await fetch(url)
         const json = await response.json()
@@ -17,7 +16,6 @@ const fetchHandler = async(url) => {
 }
 
 button.addEventListener('click', () => {
-    image.src = 'img/preloadCat.gif'
     let isLoaded = image.complete
     if (isLoaded) {
         fetchHandler(url)
